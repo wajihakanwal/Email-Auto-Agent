@@ -26,6 +26,14 @@ crewai install
 - Modify `src/email_auto_agent/config/tasks.yaml` to define your tasks
 - Modify `src/email_auto_agent/crew.py` to add your own logic, tools and specific args
 - Modify `src/email_auto_agent/main.py` to add custom inputs for your agents and tasks
+- Modify environment variables in .env
+
+## Set Up Gmail API Authentication
+1. **Enable Gmail API**:
+- Go to [Google Cloud Console](https://console.cloud.google.com/).
+- Enable the **Gmail API**.
+- Create **OAuth 2.0 credentials** and download the `credentials.json` file.
+2. **Place `credentials.json` in the root directory** of the project.
 
 ## Running the Project
 
@@ -34,6 +42,13 @@ To kickstart your crew of AI agents and begin task execution, run this from the 
 ```bash
 $ crewai run
 ```
+or 
+
+```bash
+$ uv run auto_run
+```
+if you are using uv package manager
+
 
 This command initializes the email_auto_agent Crew, assembling the agents and assigning them tasks as defined in your configuration.
 
