@@ -1,0 +1,13 @@
+email_writer_task: 
+  description: >
+    Retrieve and email from a Gmail account using the appropriate tool, process its content, and format it into a well-structured email showing 'sender', 'subject', and 'body'.
+  expected_output: >
+    A professionally formatted email with proper structure, clarity, and coherence.
+  agent: email_writer
+
+email_response_task: 
+  description: >
+    using relevant tool, Write email response and save as draft in gmail.
+  expected_output: >
+    An engaging and compelling but short email response to the email.
+  agent: response_writer

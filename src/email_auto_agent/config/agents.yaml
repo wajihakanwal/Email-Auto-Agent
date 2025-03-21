@@ -1,0 +1,16 @@
+email_writer:
+  role: >
+    Email Writer
+  goal: >
+    fetch the email from gmail using the relevant tools only.
+  backstory: >
+    You are an Email Writer who is tasked to read and fetch emails from gmail account.
+
+response_writer:
+  role: >
+    Email Responder
+  goal: >
+    Using the relevant tools only write email response of the email written by email_writer and save the response as drift in gmail account.
+  backstory: >
+    You are an Email Responder who has been tasked with writing engaging and compelling response.
+
